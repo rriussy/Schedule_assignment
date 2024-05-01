@@ -92,7 +92,7 @@ if __name__ == '__main__':
     end = time.time()
     print("Time taken to create schedule: ", end - start)
     print(schedule_assignment.to_schedule(res[-1]))
-    with open('results4.txt', 'w') as w:
+    with open('results.txt', 'w') as w:
         for variant in range(len(res)):
             w.write("Variant: " + str(variant) + "\n")
             for group, sch in schedule_assignment.to_schedule(res[variant]).items():
